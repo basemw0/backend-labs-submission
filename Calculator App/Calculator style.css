@@ -1,0 +1,122 @@
+body {
+  background: #ffeebb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+.calculator-container {
+  background: #ffcc80; /* warm soft orange */
+  border-radius: 30px;
+  padding: 20px 18px 28px;
+  width: 320px;
+  box-shadow: 0 8px 24px #d1781eaa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid #f4a261;
+}
+
+.calculator-title {
+  color: #264653;
+  margin: 0 0 18px;
+  font-weight: 700;
+  font-size: 1.8em;
+  text-shadow: 1px 1px #ff9f80;
+}
+
+.calculator {
+  width: 100%;
+}
+
+.display {
+  background: #264653; /* dark teal */
+  color: #ffeebb; /* pale yellow */
+  font-size: 3em;
+  text-align: right;
+  border-radius: 16px;
+  padding: 24px 20px 20px 14px;
+  margin-bottom: 14px;
+  box-shadow: inset 0 3px 6px #1a394b;
+  overflow-x: auto;
+  user-select: none;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 65px);
+  grid-template-rows: repeat(5, 65px);
+  gap: 12px;
+}
+
+button {
+  font-size: 1.6em;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.2s;
+  box-shadow: 0 3px 0 #b5651d;
+  user-select: none;
+  outline: none;
+  color: white;
+}
+
+/* Number buttons - bright colors */
+button.number {
+  background: #ff6f61; /* coral pink */
+  box-shadow: 0 4px 0 #b03a32;
+}
+
+button.number:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* Zero button - wide */
+button.zero {
+  grid-column: span 2;
+  border-radius: 35px;
+  text-align: left;
+  padding-left: 30px;
+}
+
+/* Operator buttons - teal/green */
+button.operator {
+  background: #2a9d8f; /* teal */
+  box-shadow: 0 4px 0 #1f6f67;
+}
+
+button.operator:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* Equals button - bright yellow */
+button.equals {
+  background: #e9c46a; /* sunflower yellow */
+  box-shadow: 0 4px 0 #b9951e;
+  border-radius: 35px;
+  grid-column: span 1;
+  color: #264653;
+  font-weight: 700;
+}
+
+button.equals:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+
+/* Gray buttons: Clear, Negate, Percent */
+button.gray {
+  background: #f4a261; /* soft orange */
+  box-shadow: 0 4px 0 #b9732b;
+  color: #264653;
+}
+
+button.gray:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}

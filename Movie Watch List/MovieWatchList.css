@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  min-height: 100vh;
+  margin: 0;
+  color: #fafafa;
+}
+.container {
+  max-width: 410px;
+  margin: 60px auto;
+  padding: 22px 16px 32px 16px;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(20, 30, 48, 0.36);
+  background: rgba(27, 32, 40, 0.97);
+}
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+  color: #ffd700;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 12px #111;
+}
+.movie-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-bottom: 18px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #223;
+}
+.input,
+.textarea {
+  background: #222b;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 8px 12px;
+  color: #fff;
+  margin-bottom: 2px;
+  box-shadow: 0 2px 8px rgba(34, 34, 59, 0.19);
+  transition: box-shadow 0.17s;
+}
+.input:focus,
+.textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #ffd700;
+}
+.stars {
+  display: flex;
+  gap: 3px;
+  margin-bottom: 8px;
+}
+.add-btn {
+  color: #fff;
+  background: linear-gradient(90deg, #b16eca, #ffd700);
+  border: none;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.17s;
+}
+.add-btn:hover {
+  background: linear-gradient(90deg, #ffd700, #b16eca);
+  transform: scale(1.05);
+}
+.movie-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.movie-item {
+  margin-bottom: 18px;
+  background: linear-gradient(90deg, #18192a, #243b55);
+  border-radius: 13px;
+  box-shadow: 0 2px 14px rgba(36, 59, 85, 0.19);
+  padding: 16px 12px;
+  color: #fff;
+  position: relative;
+}
+.movie-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+.movie-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: #ffd700;
+}
+.remove-btn {
+  background: #d63031;
+  color: #fff;
+  border: none;
+  border-radius: 2.5px;
+  font-size: 1.15rem;
+  cursor: pointer;
+  padding: 2px 7px;
+  transition: background 0.22s, transform 0.17s;
+  margin-left: 14px;
+}
+.remove-btn:hover {
+  background: #b71c1c;
+  transform: scale(1.13);
+}
+.movie-rating {
+  font-size: 1.2rem;
+  margin-bottom: 7px;
+  color: #ffd700;
+  letter-spacing: 2px;
+}
+.movie-review {
+  color: #fff;
+  font-size: 0.98rem;
+  background: rgba(20, 20, 30, 0.36);
+  padding: 7px 10px;
+  border-radius: 8px;
+  margin-top: 3px;
+  box-shadow: 0 1px 7px 0 rgba(20, 30, 48, 0.18);
+}
